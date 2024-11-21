@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root color scheme */
+:root {
+  color-scheme: dark;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body styling */
+body {
+  @apply bg-primary text-white antialiased;
+  font-feature-settings: "liga" 1, "dlig" 1, "ss01" 1;
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-gradient-to-r from-accent to-secondary bg-clip-text text-transparent;
+}
+
+/* Custom animations */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
