@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 export default function Hero() {
-  const text = 'Gropro Media Pivate Limited';
+  const text = 'Gropro Media Private Limited';
 
   const renderText = (text: string) => {
     return text.split('').map((letter, index: number) => (
